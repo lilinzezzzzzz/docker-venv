@@ -1,0 +1,39 @@
+version: '3'
+services:
+  nosugar-mysql:
+    image: "mysql:latest"
+    container_name: nosugar-mysql
+    environment:
+      TZ: "Asia/Shanghai"
+      MYSQL_ROOT_PASSWORD: "123456!"
+      MYSQL_DATABASE: "nosugar"
+    volumes:
+      - "./mysql/data:/var/lib/mysql"
+      - "./mysql/my.cnf:/etc/mysql/my.cnf"
+      - "./mysql/logs:/var/log/mysql"
+      - "./mysql/mysql-files:/var/lib/mysql-files"
+    privileged: true
+    ports:
+      - "3306:3306"
+#    network_mode: "host"
+    restart: always
+
+
+  nosugar-redis:
+    image: "redis:latest"
+    container_name: nosugar-redis
+    environment:
+      TZ: "Asia/Shanghai"
+    volumes:
+      - "./redis/redis.conf:/etc/redis/redis.conf"
+      - "./redis/logs/redis.log:/var/log/redis/redis.log"
+      - "./redis/data:/data"
+    command:
+      - /bin/bash
+      - -c
+      - redis-server /etc/redis/redis.conf
+    privileged: true
+    ports:
+      - "6379:6379"
+#    network_mode: "host"
+    restart: always
