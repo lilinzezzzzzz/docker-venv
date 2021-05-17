@@ -37,3 +37,24 @@ services:
       - "6379:6379"
 #    network_mode: "host"
     restart: always
+
+
+  nosugar-es:
+    image: "docker.elastic.co/elasticsearch/elasticsearch:5.5.0"
+    container_name: nosugar-es
+    environment:
+      discovery.type: "single-node"
+      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+      TZ: "Asia/Shanghai"
+    volumes:
+      - "./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
+      - "./elasticsearch/data:/usr/share/elasticsearch/data"
+      - "./elasticsearch/logs:/usr/share/elasticsearch/logs"
+      - "./elasticsearch/:/usr/share/elasticsearch/plugins/ik"
+    privileged: true
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    restart: always
+
+
