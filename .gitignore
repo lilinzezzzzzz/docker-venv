@@ -3,3 +3,4 @@
 mysql/data/*
 mysql/logs/*
 elasticsearch/data/*
+mongo/db/*
