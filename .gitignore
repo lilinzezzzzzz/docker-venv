@@ -3,4 +3,6 @@
 mysql/data/*
 mysql/logs/*
 elasticsearch/data/*
+redis/data/*
+redis/logs/*
 mongo/db/*
