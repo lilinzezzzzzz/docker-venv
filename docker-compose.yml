@@ -1,12 +1,12 @@
 version: '3'
 services:
-  nosugar-mysql:
+  ym-mysql:
     image: "mysql:latest"
-    container_name: nosugar-mysql
+    container_name: ym-mysql
     environment:
       TZ: "Asia/Shanghai"
-      MYSQL_ROOT_PASSWORD: "123456!"
-      MYSQL_DATABASE: "nosugar"
+      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_DATABASE: "ym"
     volumes:
       - "./mysql/data:/var/lib/mysql"
       - "./mysql/my.cnf:/etc/mysql/my.cnf"
@@ -19,9 +19,9 @@ services:
     restart: always
 
 
-  nosugar-redis:
+  ym-redis:
     image: "redis:latest"
-    container_name: nosugar-redis
+    container_name: ym-redis
     environment:
       TZ: "Asia/Shanghai"
     volumes:
@@ -39,9 +39,9 @@ services:
     restart: always
 
 
-  nosugar-es:
+  ym-es:
     image: "elasticsearch:5.5.0"
-    container_name: nosugar-es
+    container_name: ym-es
     environment:
       discovery.type: "single-node"
       ES_JAVA_OPTS: "-Xms512m -Xmx512m"
@@ -55,6 +55,18 @@ services:
     ports:
       - "9200:9200"
       - "9300:9300"
+#    network_mode: "host"
     restart: always
 
-
+  ym-mongo:
+    image: "mongo:latest"
+    container_name: ym-mongo
+    environment:
+      TZ: "Asia/Shanghai"
+    volumes:
+      - "./mongo/db:/data/db"
+    privileged: true
+    ports:
+      - "27017:27017"
+#    network_mode: "host"
+    restart: always
