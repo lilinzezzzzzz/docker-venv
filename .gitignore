@@ -1,2 +1,5 @@
 .idea
 *.sdi
+mysql/data/*
+mysql/logs/*
+elasticsearch/data/*
