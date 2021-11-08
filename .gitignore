@@ -7,3 +7,4 @@ mysql/logs/*
 elasticsearch/data/*
 redis/data/*
 mongo/db/*
+env-build-*
