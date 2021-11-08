@@ -12,12 +12,12 @@ docker run -itd --name env-3.6.1 -p 10022:22 --privileged=true python:3.6.1 /bin
 
 docker run -itd --name env-3.10.0 -p 10023:22 --privileged=true python:3.10.0 /bin/bash
 
-docker run -itd --name env-3.8.7 -p 10028:22 -p 3306:3306 -p 6379:6379 -p 27017:27017 -p 9200:9200 -p 9300:9300 -p 8000:8000 py-3.8.7:v1 /bin/bash
+docker run -itd --name env-3.9.2 --network onewiki -p 10029:22 -p 3306:3306 -p 6379:6379 -p 27017:27017 -p 9200:9200 -p 9300:9300 -p 8000:8000 py-3.9.2:v1 /bin/bash
 
 使用container网络构建环境：
     1.先docker run 一个Python环境的容器(py-env),需要映射出docker-compose所有服务需要的端口
     2.docker-compose network_mode:"py-env"
-    
+
     Python环境容器和docker-compose各服务容器共享一个网络栈，可以使用127.0.0.1互相访x问
     宿主机也可以通过127.0.0.1:端口访问docker-compose服务
 

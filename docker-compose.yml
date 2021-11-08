@@ -1,12 +1,16 @@
+# container 网络模式
 version: '3'
 services:
   python-env:
-    build: py-env-build
+    build:
+      context: ./env-build-3.9.2
+      dockerfile: Dockerfile
     image: "py-3.9.2:v1"
     container_name: python-env
     environment:
       TZ: "Asia/Shanghai"
     ports:
+      - "10029:22"
       - "3306:3306"
       - "6379:6379"
       - "27017:27017"
@@ -14,6 +18,11 @@ services:
       - "9300:9300"
       - "8000:8000"
     privileged: true
+    # 对应 -i
+    stdin_open: true
+    # 对应 -t
+    tty: true
+    entrypoint: ["sh"]
 
   mysql-env:
     image: "mysql:latest"
@@ -33,6 +42,7 @@ services:
 #    ports:
 #      - "3306:3306"
     network_mode: "service:python-env"
+#    network_mode: "container:env-3.9.2"
     restart: always
 
 
@@ -55,6 +65,7 @@ services:
 #    ports:
 #      - "6379:6379"
     network_mode: "service:python-env"
+#    network_mode: "container:env-3.9.2"
     restart: always
 
 
@@ -77,6 +88,7 @@ services:
 #      - "9200:9200"
 #      - "9300:9300"
     network_mode: "service:python-env"
+#    network_mode: "container:env-3.9.2"
     restart: always
 
   mongo-env:
@@ -92,6 +104,7 @@ services:
 #    ports:
 #      - "27017:27017"
     network_mode: "service:python-env"
+#    network_mode: "container:env-3.9.2"
     restart: always
 
 #networks:
