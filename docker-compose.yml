@@ -1,12 +1,27 @@
 version: '3'
 services:
-  ym-mysql:
+  python-env:
+    build: ./env-build-3.8.7
+    image: "py-3.9.2:v1"
+    container_name: python-env
+    environment:
+      TZ: "Asia/Shanghai"
+    ports:
+      - "3306:3306"
+      - "6379:6379"
+      - "27017:27017"
+      - "9200:9200"
+      - "9300:9300"
+      - "8000:8000"
+    privileged: true
+
+  mysql-env:
     image: "mysql:latest"
-    container_name: ym-mysql
+    container_name: mysql-env
     environment:
       TZ: "Asia/Shanghai"
       MYSQL_ROOT_PASSWORD: "123456"
-      MYSQL_DATABASE: "ym"
+#      MYSQL_DATABASE: "llz"
     volumes:
       - "./mysql/data:/var/lib/mysql"
       - "./mysql/my.cnf:/etc/mysql/my.cnf"
@@ -21,9 +36,9 @@ services:
     restart: always
 
 
-  ym-redis:
+  redis-env:
     image: "redis:latest"
-    container_name: ym-redis
+    container_name: redis-env
     environment:
       TZ: "Asia/Shanghai"
     volumes:
@@ -43,9 +58,9 @@ services:
     restart: always
 
 
-  ym-es:
+  es-env:
     image: "elasticsearch:5.5.0"
-    container_name: ym-es
+    container_name: es-env
     environment:
       discovery.type: "single-node"
       ES_JAVA_OPTS: "-Xms512m -Xmx512m"
@@ -64,9 +79,9 @@ services:
     network_mode: "container:env-onewiki"
     restart: always
 
-  ym-mongo:
+  mongo-env:
     image: "mongo:latest"
-    container_name: ym-mongo
+    container_name: mongo-env
     environment:
       TZ: "Asia/Shanghai"
     volumes:
