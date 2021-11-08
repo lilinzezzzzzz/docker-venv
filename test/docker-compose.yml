@@ -1,0 +1,16 @@
+# docker-compose 构建python解释器
+version: '3'
+services:
+  python-env:
+    image: "py-3.8.7:v1"
+    container_name: python-env
+    environment:
+      TZ: "Asia/Shanghai"
+    ports:
+      - "10022:22"
+    privileged: true
+    # 对应 -i
+    stdin_open: true
+    # 对应 -t
+    tty: true
+    entrypoint: ["sh"]
