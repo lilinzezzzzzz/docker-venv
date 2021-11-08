@@ -10,7 +10,8 @@ COPY sources.list /etc/apt
 
 RUN apt-get -y update &&  \
     apt-get -y upgrade &&  \
-    apt-get install -y openssl &&  \
+    apt-get -y install sudo \
+    apt-get -y install openssl &&  \
     apt-get install -y openssh-server &&  \
     apt-get install -y vim &&  \
     apt-get install -y net-tools && \

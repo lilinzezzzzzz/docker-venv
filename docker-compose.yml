@@ -17,7 +17,7 @@ services:
 #      - env-container
 #    ports:
 #      - "3306:3306"
-    network_mode: "container:env-3.8.7"
+    network_mode: "container:env-onewiki"
     restart: always
 
 
@@ -39,7 +39,7 @@ services:
 #      - env-container
 #    ports:
 #      - "6379:6379"
-    network_mode: "container:env-3.8.7"
+    network_mode: "container:env-onewiki"
     restart: always
 
 
@@ -61,7 +61,7 @@ services:
 #    ports:
 #      - "9200:9200"
 #      - "9300:9300"
-    network_mode: "container:env-3.8.7"
+    network_mode: "container:env-onewiki"
     restart: always
 
   ym-mongo:
@@ -76,7 +76,7 @@ services:
 #      - env-container
 #    ports:
 #      - "27017:27017"
-    network_mode: "container:env-3.8.7"
+    network_mode: "container:env-onewiki"
     restart: always
 
 #networks:
