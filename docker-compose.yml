@@ -1,7 +1,7 @@
 version: '3'
 services:
   python-env:
-    build: ./env-build-3.8.7
+    build: py-env-build
     image: "py-3.9.2:v1"
     container_name: python-env
     environment:
@@ -32,7 +32,7 @@ services:
 #      - env-container
 #    ports:
 #      - "3306:3306"
-    network_mode: "container:env-onewiki"
+    network_mode: "service:python-env"
     restart: always
 
 
@@ -54,7 +54,7 @@ services:
 #      - env-container
 #    ports:
 #      - "6379:6379"
-    network_mode: "container:env-onewiki"
+    network_mode: "service:python-env"
     restart: always
 
 
@@ -76,7 +76,7 @@ services:
 #    ports:
 #      - "9200:9200"
 #      - "9300:9300"
-    network_mode: "container:env-onewiki"
+    network_mode: "service:python-env"
     restart: always
 
   mongo-env:
@@ -91,7 +91,7 @@ services:
 #      - env-container
 #    ports:
 #      - "27017:27017"
-    network_mode: "container:env-onewiki"
+    network_mode: "service:python-env"
     restart: always
 
 #networks:
