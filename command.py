@@ -5,9 +5,7 @@ python 容器
     离线下载所有包，依赖
     pip download -d path flask
     pip download -d flasgger
-"""
 
-"""
 docker run -itd --name env-3.6.1 -p 10022:22 --privileged=true python:3.6.1 /bin/bash
 
 docker run -itd --name env-3.10.0 -p 10023:22 --privileged=true python:3.10.0 /bin/bash
@@ -65,4 +63,22 @@ docker import
     network_mode: "service:[service name]"
     network_mode: "container:[container name/id]"
 
+docker daemon配置
+{
+  "registry-mirrors": [
+    "https://ygz2147j.mirror.aliyuncs.com"
+  ],
+  "features": {
+    "buildkit": true
+  },
+  "experimental": false,
+  "builder": {
+    "gc": {
+      "enabled": true,
+      "defaultKeepStorage": "20GB"
+    }
+  },
+  "log-driver":"json-file",
+  "log-opts":{ "max-size" :"100m","max-file":"3"}
+}
 """

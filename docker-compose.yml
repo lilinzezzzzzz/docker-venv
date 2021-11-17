@@ -1,12 +1,13 @@
-# container 网络模式
 version: '3'
 services:
   python-env:
+    # 可以更换成自己的dockerfile
     build:
       context: ./env-build-3.9.2
       dockerfile: Dockerfile
+    # 镜像名字,自己命名
     image: "py-3.9.2:v1"
-    container_name: python-env
+    container_name: env-3.9.2
     environment:
       TZ: "Asia/Shanghai"
     ports:
@@ -30,19 +31,15 @@ services:
     environment:
       TZ: "Asia/Shanghai"
       MYSQL_ROOT_PASSWORD: "123456"
-#      MYSQL_DATABASE: "llz"
     volumes:
       - "./mysql/data:/var/lib/mysql"
       - "./mysql/my.cnf:/etc/mysql/my.cnf"
       - "./mysql/logs:/var/log/mysql"
       - "./mysql/mysql-files:/var/lib/mysql-files"
     privileged: true
-#    networks:
-#      - env-container
 #    ports:
 #      - "3306:3306"
     network_mode: "service:python-env"
-#    network_mode: "container:env-3.9.2"
     restart: always
 
 
@@ -60,12 +57,9 @@ services:
       - -c
       - redis-server /etc/redis/redis.conf
     privileged: true
-#    networks:
-#      - env-container
 #    ports:
 #      - "6379:6379"
     network_mode: "service:python-env"
-#    network_mode: "container:env-3.9.2"
     restart: always
 
 
@@ -82,13 +76,10 @@ services:
       - "./elasticsearch/logs:/usr/share/elasticsearch/logs"
       - "./elasticsearch/ik:/usr/share/elasticsearch/plugins/ik"
     privileged: true
-#    networks:
-#      - env-container
 #    ports:
 #      - "9200:9200"
 #      - "9300:9300"
     network_mode: "service:python-env"
-#    network_mode: "container:env-3.9.2"
     restart: always
 
   mongo-env:
@@ -99,15 +90,7 @@ services:
     volumes:
       - "./mongo/db:/data/db"
     privileged: true
-#    networks:
-#      - env-container
 #    ports:
 #      - "27017:27017"
     network_mode: "service:python-env"
-#    network_mode: "container:env-3.9.2"
     restart: always
-
-#networks:
-#  default:
-#    external:
-#      name: env-container
