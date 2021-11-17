@@ -1,5 +1,5 @@
 FROM python:3.8.7
-MAINTAINER lilinze@yimian.com.cn
+LABEL maintainer="lilinze@yimian.com.cn"
 
 WORKDIR /root
 RUN mkdir .pip
