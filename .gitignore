@@ -1,6 +1,7 @@
 .idea
 *.sdi
 *.log
+redis.log
 
 mysql/data/*
 mysql/logs/*
@@ -9,4 +10,4 @@ redis/data/*
 redis/logs/*
 mongo/db/*
 env-build-*
-/redis/logs/
+
