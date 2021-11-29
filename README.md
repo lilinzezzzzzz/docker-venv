@@ -11,3 +11,5 @@
 - 使用docker-compose构建之前，先确定你要使用的Python容器是基于什么Linux版本，不同的版本需要不同的source.list（`tail /etc/os-release 查看操作系统` ）。
 - 确定好操作系统，更换Dockerfile构建文件夹得source.list
 - docker-compose up -d
+- 各个中间件远程访问都已经配置完成
+- 启动服务之后，需要进去py-env容器，修改SSH远程访问，并且重启SSH
