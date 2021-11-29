@@ -9,3 +9,4 @@ redis/data/*
 redis/logs/*
 mongo/db/*
 env-build-*
+/redis/logs/
