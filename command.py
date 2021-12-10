@@ -31,6 +31,13 @@ lsof -i tcp:port
 容器commit生成镜像
     docker commit -a "作者" -m "提交信息" [container name/id]  镜像名:标签(tag)
 
+
+构建镜像Dockerfile
+    当前路径
+    docker build -t py-env3.8.7 .
+    指定路径
+    docker build -f /path/to/a/Dockerfile .
+
 保存容器
 docker save 保存的是镜像（image），docker export 保存的是容器(container)
 docker load 用来载入镜像包，docker import 用来载入容器包，但两者都会恢复为镜像
