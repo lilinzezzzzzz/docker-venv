@@ -3,15 +3,15 @@ LABEL maintainer="lilinze@yimian.com.cn"
 
 WORKDIR /root
 RUN mkdir .pip
-COPY pip.conf /root/.pip
+COPY ./pip.conf /root/.pip
 
 RUN cd /etc/apt && mv ./sources.list ./sources.list.back
-COPY sources.list /etc/apt
+COPY ./sources.list /etc/apt
 
 RUN apt-get -y update &&  \
     apt-get -y upgrade &&  \
-    apt-get -y install sudo \
-    apt-get -y install openssl &&  \
+    apt-get -y install sudo && \
+    apt-get install -y openssl &&  \
     apt-get install -y openssh-server &&  \
     apt-get install -y vim &&  \
     apt-get install -y net-tools && \

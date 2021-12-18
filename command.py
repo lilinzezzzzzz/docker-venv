@@ -22,7 +22,7 @@ docker run -itd --name env-3.9.2 --network onewiki -p 10029:22 -p 3306:3306 -p 6
 查看操作系统
     tail /etc/os-release 
 查看端口进程
-lsof -i tcp:port
+    lsof -i tcp:port
 
 拷贝文件
     docker cp [宿主机路径] [容器:容器路径]
