@@ -60,13 +60,13 @@ curl -X GET 127.0.0.1:9200/_analyze?pretty -H 'content-Type:application/json' -d
 查看操作系统
 
 ``` shell
-    tail /etc/os-release 
+tail /etc/os-release 
 ```
 
 查看端口进程
 
 ``` shell
-    lsof -i tcp:port
+lsof -i tcp:port
 ```
 
 离线下载所有包，依赖
