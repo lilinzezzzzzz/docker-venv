@@ -1,6 +1,6 @@
 """
 python 容器
-    阿里云源：https://ygz2147j.mirror.aliyuncs.com
+    阿里云源:https://ygz2147j.mirror.aliyuncs.com
 
     离线下载所有包，依赖
     pip download -d path flask
