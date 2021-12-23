@@ -4,6 +4,9 @@
 version: '3'
 services:
   env-3.8.7:
+    build:
+      context: ./env-build-3.9.2
+      dockerfile: Dockerfile
     image: "py-3.8.7:v1"
     container_name: env-3.8.7
     environment:
