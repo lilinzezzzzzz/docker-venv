@@ -1,7 +1,7 @@
 # docker-compose 构建python解释器
 # 单独构建Python环境，使用已经构建好的网络
 # 使用py-env-build先构建py-3.8.7:v1镜像
-version: '3'
+version: '3.6'
 services:
   env-3.8.7:
     build:
@@ -11,6 +11,10 @@ services:
     container_name: env-3.8.7
     environment:
       TZ: "Asia/Shanghai"
+    # 指定静态ip
+    networks:
+      default:
+        ipv4_address: 172.18.0.3
     ports:
       - "10028:22"
       - "8088:8088"
@@ -23,5 +27,4 @@ services:
 
 networks:
   default:
-    external:
       name: docker-env_default

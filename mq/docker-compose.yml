@@ -1,4 +1,4 @@
-version: '3'
+version: '3.6'
 
 services:
   zookeeper:
@@ -31,5 +31,4 @@ services:
 
 networks:
   default:
-    external:
       name: docker-env_default
