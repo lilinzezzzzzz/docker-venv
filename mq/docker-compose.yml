@@ -6,6 +6,10 @@ services:
     container_name: zookeeper
     ports:
       - "2181:2181"
+    # 指定静态ip
+    networks:
+      default:
+        ipv4_address: 172.18.0.4
     environment:
       TZ: "Asia/Shanghai"
     volumes:
@@ -18,6 +22,10 @@ services:
     container_name: kafka
     ports:
       - "9092:9092"
+    # 指定静态ip
+    networks:
+      default:
+        ipv4_address: 172.18.0.3
     environment:
       TZ: "Asia/Shanghai"
       KAFKA_ADVERTISED_HOST_NAME: "192.168.60.4"
