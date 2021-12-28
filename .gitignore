@@ -9,7 +9,5 @@ elasticsearch/data/*
 redis/data/*
 redis/logs/*
 mongo/db/*
-env-build-*
 
-redis/logs/redis.log
 redis/logs/redis.log
