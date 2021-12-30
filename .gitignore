@@ -9,7 +9,7 @@ mysql/logs/*
 elasticsearch/data/*
 
 redis/data/*
-redis/logs/redis.log
+./redis/logs/redis.log
 
 mongodb/db/*
 mongodb/logs/mongod.log
