@@ -3,18 +3,18 @@
 *.log
 
 
-mysql/data/*
-mysql/logs/*
+./mysql/data/*
+./mysql/logs/*
 
-elasticsearch/data/*
+./elasticsearch/data/*
 
-redis/data/*
+./redis/data/*
 ./redis/logs/redis.log
 
-mongodb/db/*
-mongodb/logs/mongod.log
+./mongodb/db/*
+./mongodb/logs/mongod.log
 
-clickhouse/data/*
-clickhouse/logs/*
+./clickhouse/data/*
+./clickhouse/logs/*
 
 
