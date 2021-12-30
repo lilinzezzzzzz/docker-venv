@@ -1,13 +1,20 @@
 .idea
 *.sdi
 *.log
-redis.log
+
 
 mysql/data/*
 mysql/logs/*
-elasticsearch/data/*
-redis/data/*
-redis/logs/*
-mongo/db/*
 
+elasticsearch/data/*
+
+redis/data/*
 redis/logs/redis.log
+
+mongodb/db/*
+mongodb/logs/mongod.log
+
+clickhouse/data/*
+clickhouse/logs/*
+
+
