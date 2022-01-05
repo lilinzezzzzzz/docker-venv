@@ -12,9 +12,9 @@ services:
     environment:
       TZ: "Asia/Shanghai"
     # 指定静态ip
-    networks:
-      default:
-        ipv4_address: 172.18.0.3
+#    networks:
+#      default:
+#        ipv4_address: 172.18.0.3
     ports:
       - "10028:22"
       - "8088:8088"
