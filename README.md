@@ -11,6 +11,11 @@
 - 中间件版本按需指定，ES分词器需要自己匹配
 - ./test 用于构建单个Python解释器
 
+## 清华镜像
+```shell
+https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
+```
+
 ## 使用
 
 - 使用docker-compose构建之前，先确定你要使用的Python容器是基于什么Linux版本，不同的版本需要不同的source.list（`tail /etc/os-release 查看操作系统` ）。
