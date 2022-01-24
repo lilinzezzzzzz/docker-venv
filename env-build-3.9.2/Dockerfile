@@ -8,7 +8,7 @@ COPY ./pip.conf /root/.pip
 RUN cd /etc/apt && mv ./sources.list ./sources.list.back
 COPY ./sources.list /etc/apt
 
-RUN apt-get -y update &&  \
+RUN apt-get update &&  \
     apt-get -y upgrade &&  \
     apt-get -y install sudo && \
     apt-get install -y openssl &&  \
