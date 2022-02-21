@@ -2,22 +2,22 @@ version: '3.6'
 services:
   python-env:
     # 可以更换成自己的dockerfile
-    build:
-      context: ./env-build-3.9.2
-      dockerfile: Dockerfile
+#    build:
+#      context: ./env-build-3.6.2
+#      dockerfile: Dockerfile
     # 镜像名字,自己命名
-    image: "py-3.9.2:v1"
-    container_name: env-3.9.2
+    image: "py-3.6.2:v1"
+    container_name: env-3.6.2
     environment:
       TZ: "Asia/Shanghai"
     ports:
-      - "10029:22"
+      - "10026:22"
       - "3306:3306"
       - "6379:6379"
       - "27017:27017"
       - "9200:9200"
       - "9300:9300"
-      - "8000:8000"
+      - "5001:5001"
       - "8123:8123"
       - "9000:9000"
       - "9009:9009"
@@ -61,25 +61,6 @@ services:
     restart: always
 
 
-  elasticsearch:
-    image: "elasticsearch:5.5.0"
-    container_name: elasticsearch
-    environment:
-      TZ: "Asia/Shanghai"
-      discovery.type: "single-node"
-      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
-    volumes:
-      - "./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
-      - "./elasticsearch/data:/usr/share/elasticsearch/data"
-      - "./elasticsearch/logs:/usr/share/elasticsearch/logs"
-      - "./elasticsearch/ik:/usr/share/elasticsearch/plugins/ik"
-    #    ports:
-    #      - "9200:9200"
-    #      - "9300:9300"
-    network_mode: "service:python-env"
-    restart: always
-
-
   mongodb:
     image: "mongo:latest"
     container_name: mongodb
@@ -93,6 +74,25 @@ services:
     #      - "27017:27017"
     network_mode: "service:python-env"
     restart: always
+
+
+#  elasticsearch:
+#    image: "elasticsearch:5.5.0"
+#    container_name: elasticsearch
+#    environment:
+#      TZ: "Asia/Shanghai"
+#      discovery.type: "single-node"
+#      ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+#    volumes:
+#      - "./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml"
+#      - "./elasticsearch/data:/usr/share/elasticsearch/data"
+#      - "./elasticsearch/logs:/usr/share/elasticsearch/logs"
+#      - "./elasticsearch/ik:/usr/share/elasticsearch/plugins/ik"
+#    #    ports:
+#    #      - "9200:9200"
+#    #      - "9300:9300"
+#    network_mode: "service:python-env"
+#    restart: always
 
 
 #  clickhouse-server:
