@@ -6,16 +6,18 @@ services:
     #      context: ./env-build-3.6.2
     #      dockerfile: Dockerfile
     # 镜像名字,自己命名
-    image: "py-3.10.4:v2"
+    image: "py-3.10.4:v1"
     container_name: env-3.10.4
     environment:
       TZ: "Asia/Shanghai"
     ports:
       - "10010:22"
       - "8080:8080"
-      - "18002:18002"
       - "3306:3306"
       - "27017:27017"
+      - "6010:6010"
+      - "5010:5010"
+    #  - "18002:18002"
     #      - "6379:6379"
     #      - "9200:9200"
     #      - "9300:9300"
@@ -31,6 +33,14 @@ services:
     # 对应 -t
     tty: true
     entrypoint: [ "sh" ]
+
+  go-env:
+    image: golang:latest
+    container_name: go-env-3.10.4
+    environment:
+      TZ: "Asia/Shanghai"
+    network_mode: "service:python-env"
+    restart: always
 
   mysql:
     image: "mysql:latest"
