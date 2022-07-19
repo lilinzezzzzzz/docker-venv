@@ -158,8 +158,8 @@ docker commit -a "作者" -m "提交信息" [container name/id]  镜像名:标�
 容器链接(断开)新网络
 
 ```docker
-    docker network(disconnect) connect [network name/id] [container name/id]
-    例：docker network connect(connect) network_name xxs
+    docker network connect(disconnect) [network name/id] [container name/id]
+    例：docker network connect(disconnect) network_name xxs
     通过docker inspect xxs 查看xxs容器的网络信息，增加(减少)了network_name网络
 ```
 

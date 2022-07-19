@@ -7,4 +7,4 @@ docker run -itd --name env-3.10.4 -e TZ=Asia/Shanghai env-3.10.4:v1 /bin/bash
 docker commit -a "lilinze@yimian.com.cn" -m "add go env" 6b609788f7aa py-3.10.4:v2
 
 
-docker run -itd --name local-3.10.4 -e TZ=Asia/Shanghai --network=docker-env_default -p 10310:22 env-3.10.4:v2 /bin/bash
+docker run -itd --name local-3.10.4 -e TZ=Asia/Shanghai --network=docker-env_default -p 10310:22 -p 8181:8181 py-3.10.4:v2 /bin/bash

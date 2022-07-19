@@ -6,7 +6,7 @@ services:
     #      context: ./env-build-3.6.2
     #      dockerfile: Dockerfile
     # 镜像名字,自己命名
-    image: "py-3.10.4:v1"
+    image: "py-3.10.4:v2"
     container_name: env-3.10.4
     environment:
       TZ: "Asia/Shanghai"
@@ -17,14 +17,14 @@ services:
       - "27017:27017"
       - "6010:6010"
       - "5010:5010"
-    #  - "18002:18002"
-    #      - "6379:6379"
-    #      - "9200:9200"
-    #      - "9300:9300"
-    #      - "5001:5001"
-    #      - "8123:8123"
-    #      - "9000:9000"
-    #      - "9009:9009"
+      - "6379:6379"
+#      - "18002:18002"
+#      - "9200:9200"
+#      - "9300:9300"
+#      - "5001:5001"
+#      - "8123:8123"
+#      - "9000:9000"
+#      - "9009:9009"
 
     # root
     privileged: true
@@ -34,13 +34,6 @@ services:
     tty: true
     entrypoint: [ "sh" ]
 
-  go-env:
-    image: golang:latest
-    container_name: go-env-3.10.4
-    environment:
-      TZ: "Asia/Shanghai"
-    network_mode: "service:python-env"
-    restart: always
 
   mysql:
     image: "mysql:latest"
