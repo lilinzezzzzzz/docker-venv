@@ -18,6 +18,4 @@ clickhouse/data/*
 clickhouse/logs/*
 
 
-runserver -h 0.0.0.0 -p 5001 --debugger --reload
-PYTHONUNBUFFERED=1;YISONAR_ENV=dev;LC_ALL=C.UTF-8;LANG=C.UTF-8;FLASK_ENV=1
 

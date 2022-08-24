@@ -1487,3 +1487,1308 @@
 1:M 30 Dec 2021 11:07:04.464 # Done loading RDB, keys loaded: 1, keys expired: 0.
 1:M 30 Dec 2021 11:07:04.475 * DB loaded from disk: 0.047 seconds
 1:M 30 Dec 2021 11:07:04.481 * Ready to accept connections
+1:signal-handler (1641455579) Received SIGTERM scheduling shutdown...
+1:M 06 Jan 2022 15:52:59.080 # User requested shutdown...
+1:M 06 Jan 2022 15:52:59.090 * Saving the final RDB snapshot before exiting.
+1:M 06 Jan 2022 15:52:59.213 * DB saved on disk
+1:M 06 Jan 2022 15:52:59.219 * Removing the pid file.
+1:M 06 Jan 2022 15:52:59.226 # Redis is now ready to exit, bye bye...
+1:C 06 Jan 2022 16:57:43.855 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 06 Jan 2022 16:57:43.861 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 06 Jan 2022 16:57:43.887 # Configuration loaded
+1:M 06 Jan 2022 16:57:43.894 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 06 Jan 2022 16:57:43.939 # Server initialized
+1:M 06 Jan 2022 16:57:43.983 * Loading RDB produced by version 6.2.6
+1:M 06 Jan 2022 16:57:43.987 * RDB age 3884 seconds
+1:M 06 Jan 2022 16:57:43.994 * RDB memory usage when created 0.77 Mb
+1:M 06 Jan 2022 16:57:44.003 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 06 Jan 2022 16:57:44.009 * DB loaded from disk: 0.063 seconds
+1:M 06 Jan 2022 16:57:44.013 * Ready to accept connections
+1:signal-handler (1641459495) Received SIGTERM scheduling shutdown...
+1:M 06 Jan 2022 16:58:15.758 # User requested shutdown...
+1:M 06 Jan 2022 16:58:15.763 * Saving the final RDB snapshot before exiting.
+1:M 06 Jan 2022 16:58:15.789 * DB saved on disk
+1:M 06 Jan 2022 16:58:15.795 * Removing the pid file.
+1:M 06 Jan 2022 16:58:15.797 # Redis is now ready to exit, bye bye...
+1:C 06 Jan 2022 16:58:33.758 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 06 Jan 2022 16:58:33.761 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 06 Jan 2022 16:58:33.770 # Configuration loaded
+1:M 06 Jan 2022 16:58:33.775 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 06 Jan 2022 16:58:33.784 # Server initialized
+1:M 06 Jan 2022 16:58:33.806 * Loading RDB produced by version 6.2.6
+1:M 06 Jan 2022 16:58:33.809 * RDB age 18 seconds
+1:M 06 Jan 2022 16:58:33.815 * RDB memory usage when created 0.77 Mb
+1:M 06 Jan 2022 16:58:33.820 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 06 Jan 2022 16:58:33.827 * DB loaded from disk: 0.036 seconds
+1:M 06 Jan 2022 16:58:33.829 * Ready to accept connections
+1:C 10 Jan 2022 14:09:28.770 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 10 Jan 2022 14:09:28.774 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 10 Jan 2022 14:09:28.778 # Configuration loaded
+1:M 10 Jan 2022 14:09:28.780 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 10 Jan 2022 14:09:28.791 # Server initialized
+1:M 10 Jan 2022 14:09:28.823 * Loading RDB produced by version 6.2.6
+1:M 10 Jan 2022 14:09:28.825 * RDB age 335473 seconds
+1:M 10 Jan 2022 14:09:28.830 * RDB memory usage when created 0.77 Mb
+1:M 10 Jan 2022 14:09:28.832 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 10 Jan 2022 14:09:28.836 * DB loaded from disk: 0.040 seconds
+1:M 10 Jan 2022 14:09:28.840 * Ready to accept connections
+1:C 12 Jan 2022 15:05:55.786 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 12 Jan 2022 15:05:55.791 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 12 Jan 2022 15:05:55.796 # Configuration loaded
+1:M 12 Jan 2022 15:05:55.800 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 12 Jan 2022 15:05:55.826 # Server initialized
+1:M 12 Jan 2022 15:05:55.944 * Loading RDB produced by version 6.2.6
+1:M 12 Jan 2022 15:05:55.948 * RDB age 511660 seconds
+1:M 12 Jan 2022 15:05:55.971 * RDB memory usage when created 0.77 Mb
+1:M 12 Jan 2022 15:05:55.975 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 12 Jan 2022 15:05:55.990 * DB loaded from disk: 0.149 seconds
+1:M 12 Jan 2022 15:05:55.993 * Ready to accept connections
+1:signal-handler (1641978799) Received SIGTERM scheduling shutdown...
+1:M 12 Jan 2022 17:13:19.831 # User requested shutdown...
+1:M 12 Jan 2022 17:13:19.839 * Saving the final RDB snapshot before exiting.
+1:M 12 Jan 2022 17:13:19.885 * DB saved on disk
+1:M 12 Jan 2022 17:13:19.887 * Removing the pid file.
+1:M 12 Jan 2022 17:13:19.909 # Redis is now ready to exit, bye bye...
+1:C 12 Jan 2022 17:13:20.280 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 12 Jan 2022 17:13:20.283 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 12 Jan 2022 17:13:20.289 # Configuration loaded
+1:M 12 Jan 2022 17:13:20.293 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 12 Jan 2022 17:13:20.323 # Server initialized
+1:M 12 Jan 2022 17:13:20.396 * Loading RDB produced by version 6.2.6
+1:M 12 Jan 2022 17:13:20.399 * RDB age 1 seconds
+1:M 12 Jan 2022 17:13:20.405 * RDB memory usage when created 0.77 Mb
+1:M 12 Jan 2022 17:13:20.409 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 12 Jan 2022 17:13:20.421 * DB loaded from disk: 0.084 seconds
+1:M 12 Jan 2022 17:13:20.430 * Ready to accept connections
+1:C 13 Jan 2022 11:59:06.126 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 13 Jan 2022 11:59:06.128 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 13 Jan 2022 11:59:06.208 # Configuration loaded
+1:M 13 Jan 2022 11:59:06.225 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 13 Jan 2022 11:59:06.236 # Server initialized
+1:M 13 Jan 2022 11:59:06.279 * Loading RDB produced by version 6.2.6
+1:M 13 Jan 2022 11:59:06.283 * RDB age 67547 seconds
+1:M 13 Jan 2022 11:59:06.288 * RDB memory usage when created 0.77 Mb
+1:M 13 Jan 2022 11:59:06.290 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 13 Jan 2022 11:59:06.294 * DB loaded from disk: 0.053 seconds
+1:M 13 Jan 2022 11:59:06.297 * Ready to accept connections
+1:signal-handler (1643268184) Received SIGTERM scheduling shutdown...
+1:M 27 Jan 2022 15:23:04.163 # User requested shutdown...
+1:M 27 Jan 2022 15:23:04.170 * Saving the final RDB snapshot before exiting.
+1:M 27 Jan 2022 15:23:04.198 * DB saved on disk
+1:M 27 Jan 2022 15:23:04.206 * Removing the pid file.
+1:M 27 Jan 2022 15:23:04.219 # Redis is now ready to exit, bye bye...
+1:C 27 Jan 2022 15:24:17.268 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 27 Jan 2022 15:24:17.273 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 27 Jan 2022 15:24:17.282 # Configuration loaded
+1:M 27 Jan 2022 15:24:17.287 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 27 Jan 2022 15:24:17.317 # Server initialized
+1:M 27 Jan 2022 15:24:17.342 * Loading RDB produced by version 6.2.6
+1:M 27 Jan 2022 15:24:17.360 * RDB age 73 seconds
+1:M 27 Jan 2022 15:24:17.367 * RDB memory usage when created 0.77 Mb
+1:M 27 Jan 2022 15:24:17.372 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 27 Jan 2022 15:24:17.384 * DB loaded from disk: 0.053 seconds
+1:M 27 Jan 2022 15:24:17.390 * Ready to accept connections
+1:signal-handler (1643268365) Received SIGTERM scheduling shutdown...
+1:M 27 Jan 2022 15:26:05.984 # User requested shutdown...
+1:M 27 Jan 2022 15:26:06.015 * Saving the final RDB snapshot before exiting.
+1:M 27 Jan 2022 15:26:06.083 * DB saved on disk
+1:M 27 Jan 2022 15:26:06.104 * Removing the pid file.
+1:M 27 Jan 2022 15:26:06.130 # Redis is now ready to exit, bye bye...
+1:C 27 Jan 2022 15:26:48.698 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 27 Jan 2022 15:26:48.716 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 27 Jan 2022 15:26:48.723 # Configuration loaded
+1:M 27 Jan 2022 15:26:48.729 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 27 Jan 2022 15:26:48.748 # Server initialized
+1:M 27 Jan 2022 15:26:48.773 * Loading RDB produced by version 6.2.6
+1:M 27 Jan 2022 15:26:48.782 * RDB age 42 seconds
+1:M 27 Jan 2022 15:26:48.791 * RDB memory usage when created 0.77 Mb
+1:M 27 Jan 2022 15:26:48.797 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 27 Jan 2022 15:26:48.822 * DB loaded from disk: 0.052 seconds
+1:M 27 Jan 2022 15:26:48.827 * Ready to accept connections
+1:C 08 Feb 2022 11:36:01.882 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Feb 2022 11:36:01.887 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Feb 2022 11:36:01.895 # Configuration loaded
+1:M 08 Feb 2022 11:36:01.898 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 08 Feb 2022 11:36:01.911 # Server initialized
+1:M 08 Feb 2022 11:36:01.946 * Loading RDB produced by version 6.2.6
+1:M 08 Feb 2022 11:36:01.948 * RDB age 1022995 seconds
+1:M 08 Feb 2022 11:36:01.955 * RDB memory usage when created 0.77 Mb
+1:M 08 Feb 2022 11:36:01.958 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 08 Feb 2022 11:36:01.965 * DB loaded from disk: 0.046 seconds
+1:M 08 Feb 2022 11:36:01.983 * Ready to accept connections
+1:C 24 Feb 2022 10:45:12.877 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 24 Feb 2022 10:45:12.881 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 24 Feb 2022 10:45:12.888 # Configuration loaded
+1:M 24 Feb 2022 10:45:12.893 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 24 Feb 2022 10:45:12.905 # Server initialized
+1:M 24 Feb 2022 10:45:12.938 * Loading RDB produced by version 6.2.6
+1:M 24 Feb 2022 10:45:12.942 * RDB age 2402346 seconds
+1:M 24 Feb 2022 10:45:12.948 * RDB memory usage when created 0.77 Mb
+1:M 24 Feb 2022 10:45:12.952 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 24 Feb 2022 10:45:12.959 * DB loaded from disk: 0.047 seconds
+1:M 24 Feb 2022 10:45:12.963 * Ready to accept connections
+1:C 21 Mar 2022 10:54:05.058 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 21 Mar 2022 10:54:05.060 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 21 Mar 2022 10:54:05.064 # Configuration loaded
+1:M 21 Mar 2022 10:54:05.066 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 21 Mar 2022 10:54:05.077 # Server initialized
+1:M 21 Mar 2022 10:54:05.157 * Loading RDB produced by version 6.2.6
+1:M 21 Mar 2022 10:54:05.159 * RDB age 4562879 seconds
+1:M 21 Mar 2022 10:54:05.163 * RDB memory usage when created 0.77 Mb
+1:M 21 Mar 2022 10:54:05.165 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 21 Mar 2022 10:54:05.171 * DB loaded from disk: 0.088 seconds
+1:M 21 Mar 2022 10:54:05.173 * Ready to accept connections
+1:C 06 Apr 2022 10:59:05.197 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 06 Apr 2022 10:59:05.199 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 06 Apr 2022 10:59:05.203 # Configuration loaded
+1:M 06 Apr 2022 10:59:05.205 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 06 Apr 2022 10:59:05.212 # Server initialized
+1:M 06 Apr 2022 10:59:05.247 * Loading RDB produced by version 6.2.6
+1:M 06 Apr 2022 10:59:05.250 * RDB age 5945579 seconds
+1:M 06 Apr 2022 10:59:05.254 * RDB memory usage when created 0.77 Mb
+1:M 06 Apr 2022 10:59:05.257 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 06 Apr 2022 10:59:05.261 * DB loaded from disk: 0.044 seconds
+1:M 06 Apr 2022 10:59:05.263 * Ready to accept connections
+1:C 20 Apr 2022 14:29:04.051 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 20 Apr 2022 14:29:04.055 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 20 Apr 2022 14:29:04.076 # Configuration loaded
+1:M 20 Apr 2022 14:29:04.078 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 20 Apr 2022 14:29:04.087 # Server initialized
+1:M 20 Apr 2022 14:29:04.106 * Loading RDB produced by version 6.2.6
+1:M 20 Apr 2022 14:29:04.124 * RDB age 7167778 seconds
+1:M 20 Apr 2022 14:29:04.128 * RDB memory usage when created 0.77 Mb
+1:M 20 Apr 2022 14:29:04.131 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 20 Apr 2022 14:29:04.135 * DB loaded from disk: 0.044 seconds
+1:M 20 Apr 2022 14:29:04.138 * Ready to accept connections
+1:C 05 May 2022 11:56:43.419 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 05 May 2022 11:56:43.422 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 05 May 2022 11:56:43.426 # Configuration loaded
+1:M 05 May 2022 11:56:43.428 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 05 May 2022 11:56:43.437 # Server initialized
+1:M 05 May 2022 11:56:43.530 * Loading RDB produced by version 6.2.6
+1:M 05 May 2022 11:56:43.533 * RDB age 8454637 seconds
+1:M 05 May 2022 11:56:43.537 * RDB memory usage when created 0.77 Mb
+1:M 05 May 2022 11:56:43.538 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 05 May 2022 11:56:43.542 * DB loaded from disk: 0.101 seconds
+1:M 05 May 2022 11:56:43.544 * Ready to accept connections
+1:signal-handler (1651730783) Received SIGTERM scheduling shutdown...
+1:M 05 May 2022 14:06:23.759 # User requested shutdown...
+1:M 05 May 2022 14:06:23.761 * Saving the final RDB snapshot before exiting.
+1:M 05 May 2022 14:06:23.784 * DB saved on disk
+1:M 05 May 2022 14:06:23.786 * Removing the pid file.
+1:M 05 May 2022 14:06:23.790 # Redis is now ready to exit, bye bye...
+1:C 05 May 2022 14:22:36.657 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 05 May 2022 14:22:36.661 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 05 May 2022 14:22:36.665 # Configuration loaded
+1:M 05 May 2022 14:22:36.669 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 05 May 2022 14:22:36.679 # Server initialized
+1:M 05 May 2022 14:22:36.689 * Loading RDB produced by version 6.2.6
+1:M 05 May 2022 14:22:36.692 * RDB age 973 seconds
+1:M 05 May 2022 14:22:36.700 * RDB memory usage when created 0.77 Mb
+1:M 05 May 2022 14:22:36.706 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 05 May 2022 14:22:36.712 * DB loaded from disk: 0.026 seconds
+1:M 05 May 2022 14:22:36.715 * Ready to accept connections
+1:signal-handler (1651740935) Received SIGTERM scheduling shutdown...
+1:M 05 May 2022 16:55:35.318 # User requested shutdown...
+1:M 05 May 2022 16:55:35.320 * Saving the final RDB snapshot before exiting.
+1:M 05 May 2022 16:55:35.339 * DB saved on disk
+1:M 05 May 2022 16:55:35.341 * Removing the pid file.
+1:M 05 May 2022 16:55:35.346 # Redis is now ready to exit, bye bye...
+1:C 05 May 2022 17:20:51.936 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 05 May 2022 17:20:51.940 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 05 May 2022 17:20:51.945 # Configuration loaded
+1:M 05 May 2022 17:20:51.949 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 05 May 2022 17:20:51.958 # Server initialized
+1:M 05 May 2022 17:20:51.964 * Loading RDB produced by version 6.2.6
+1:M 05 May 2022 17:20:51.967 * RDB age 1516 seconds
+1:M 05 May 2022 17:20:51.973 * RDB memory usage when created 0.77 Mb
+1:M 05 May 2022 17:20:51.977 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 05 May 2022 17:20:51.981 * DB loaded from disk: 0.019 seconds
+1:M 05 May 2022 17:20:51.984 * Ready to accept connections
+1:signal-handler (1652062020) Received SIGTERM scheduling shutdown...
+1:M 09 May 2022 10:07:00.813 # User requested shutdown...
+1:M 09 May 2022 10:07:00.824 * Saving the final RDB snapshot before exiting.
+1:M 09 May 2022 10:07:00.855 * DB saved on disk
+1:M 09 May 2022 10:07:00.860 * Removing the pid file.
+1:M 09 May 2022 10:07:00.865 # Redis is now ready to exit, bye bye...
+1:C 09 May 2022 10:08:57.337 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 09 May 2022 10:08:57.341 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 09 May 2022 10:08:57.347 # Configuration loaded
+1:M 09 May 2022 10:08:57.352 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 09 May 2022 10:08:57.363 # Server initialized
+1:M 09 May 2022 10:08:57.371 * Loading RDB produced by version 6.2.6
+1:M 09 May 2022 10:08:57.375 * RDB age 117 seconds
+1:M 09 May 2022 10:08:57.380 * RDB memory usage when created 0.77 Mb
+1:M 09 May 2022 10:08:57.383 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 09 May 2022 10:08:57.389 * DB loaded from disk: 0.020 seconds
+1:M 09 May 2022 10:08:57.392 * Ready to accept connections
+1:signal-handler (1652081160) Received SIGTERM scheduling shutdown...
+1:M 09 May 2022 15:26:00.439 # User requested shutdown...
+1:M 09 May 2022 15:26:00.442 * Saving the final RDB snapshot before exiting.
+1:M 09 May 2022 15:26:00.489 * DB saved on disk
+1:M 09 May 2022 15:26:00.492 * Removing the pid file.
+1:M 09 May 2022 15:26:00.513 # Redis is now ready to exit, bye bye...
+1:C 09 May 2022 15:27:09.248 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 09 May 2022 15:27:09.252 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 09 May 2022 15:27:09.275 # Configuration loaded
+1:M 09 May 2022 15:27:09.280 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 09 May 2022 15:27:09.290 # Server initialized
+1:M 09 May 2022 15:27:09.299 * Loading RDB produced by version 6.2.6
+1:M 09 May 2022 15:27:09.302 * RDB age 69 seconds
+1:M 09 May 2022 15:27:09.325 * RDB memory usage when created 0.77 Mb
+1:M 09 May 2022 15:27:09.328 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 09 May 2022 15:27:09.334 * DB loaded from disk: 0.037 seconds
+1:M 09 May 2022 15:27:09.337 * Ready to accept connections
+1:C 23 May 2022 18:01:14.794 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 23 May 2022 18:01:14.797 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 23 May 2022 18:01:14.803 # Configuration loaded
+1:M 23 May 2022 18:01:14.808 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 23 May 2022 18:01:14.830 # Server initialized
+1:M 23 May 2022 18:01:14.858 * Loading RDB produced by version 6.2.6
+1:M 23 May 2022 18:01:14.876 * RDB age 1218914 seconds
+1:M 23 May 2022 18:01:14.879 * RDB memory usage when created 0.77 Mb
+1:M 23 May 2022 18:01:14.882 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 23 May 2022 18:01:14.887 * DB loaded from disk: 0.051 seconds
+1:M 23 May 2022 18:01:14.889 * Ready to accept connections
+1:C 07 Jun 2022 17:58:01.716 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 07 Jun 2022 17:58:01.719 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 07 Jun 2022 17:58:01.723 # Configuration loaded
+1:M 07 Jun 2022 17:58:01.739 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 07 Jun 2022 17:58:01.747 # Server initialized
+1:M 07 Jun 2022 17:58:01.795 * Loading RDB produced by version 6.2.6
+1:M 07 Jun 2022 17:58:01.798 * RDB age 2514721 seconds
+1:M 07 Jun 2022 17:58:01.802 * RDB memory usage when created 0.77 Mb
+1:M 07 Jun 2022 17:58:01.805 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 07 Jun 2022 17:58:01.809 * DB loaded from disk: 0.057 seconds
+1:M 07 Jun 2022 17:58:01.812 * Ready to accept connections
+1:signal-handler (1654659567) Received SIGTERM scheduling shutdown...
+1:M 08 Jun 2022 11:39:27.577 # User requested shutdown...
+1:M 08 Jun 2022 11:39:27.582 * Saving the final RDB snapshot before exiting.
+1:M 08 Jun 2022 11:39:27.594 * DB saved on disk
+1:M 08 Jun 2022 11:39:27.598 * Removing the pid file.
+1:M 08 Jun 2022 11:39:27.600 # Redis is now ready to exit, bye bye...
+1:C 08 Jun 2022 11:39:46.571 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jun 2022 11:39:46.575 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jun 2022 11:39:46.580 # Configuration loaded
+1:M 08 Jun 2022 11:39:46.584 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 08 Jun 2022 11:39:46.594 # Server initialized
+1:M 08 Jun 2022 11:39:46.609 * Loading RDB produced by version 6.2.6
+1:M 08 Jun 2022 11:39:46.612 * RDB age 19 seconds
+1:M 08 Jun 2022 11:39:46.617 * RDB memory usage when created 0.77 Mb
+1:M 08 Jun 2022 11:39:46.620 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 08 Jun 2022 11:39:46.625 * DB loaded from disk: 0.026 seconds
+1:M 08 Jun 2022 11:39:46.628 * Ready to accept connections
+1:signal-handler (1654670906) Received SIGTERM scheduling shutdown...
+1:M 08 Jun 2022 14:48:26.959 # User requested shutdown...
+1:M 08 Jun 2022 14:48:26.963 * Saving the final RDB snapshot before exiting.
+1:M 08 Jun 2022 14:48:26.976 * DB saved on disk
+1:M 08 Jun 2022 14:48:26.979 * Removing the pid file.
+1:M 08 Jun 2022 14:48:26.981 # Redis is now ready to exit, bye bye...
+1:C 08 Jun 2022 14:49:26.788 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 08 Jun 2022 14:49:26.793 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 08 Jun 2022 14:49:26.805 # Configuration loaded
+1:M 08 Jun 2022 14:49:26.809 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 08 Jun 2022 14:49:26.822 # Server initialized
+1:M 08 Jun 2022 14:49:26.831 * Loading RDB produced by version 6.2.6
+1:M 08 Jun 2022 14:49:26.836 * RDB age 60 seconds
+1:M 08 Jun 2022 14:49:26.846 * RDB memory usage when created 0.77 Mb
+1:M 08 Jun 2022 14:49:26.857 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 08 Jun 2022 14:49:26.865 * DB loaded from disk: 0.035 seconds
+1:M 08 Jun 2022 14:49:26.869 * Ready to accept connections
+1:signal-handler (1655805820) Received SIGTERM scheduling shutdown...
+1:M 21 Jun 2022 18:03:41.007 # User requested shutdown...
+1:M 21 Jun 2022 18:03:41.025 * Saving the final RDB snapshot before exiting.
+1:M 21 Jun 2022 18:03:41.054 * DB saved on disk
+1:M 21 Jun 2022 18:03:41.057 * Removing the pid file.
+1:M 21 Jun 2022 18:03:41.077 # Redis is now ready to exit, bye bye...
+1:C 21 Jun 2022 18:04:57.264 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 21 Jun 2022 18:04:57.268 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 21 Jun 2022 18:04:57.275 # Configuration loaded
+1:M 21 Jun 2022 18:04:57.279 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 21 Jun 2022 18:04:57.293 # Server initialized
+1:M 21 Jun 2022 18:04:57.316 * Loading RDB produced by version 6.2.6
+1:M 21 Jun 2022 18:04:57.320 * RDB age 76 seconds
+1:M 21 Jun 2022 18:04:57.332 * RDB memory usage when created 0.77 Mb
+1:M 21 Jun 2022 18:04:57.336 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 21 Jun 2022 18:04:57.342 * DB loaded from disk: 0.042 seconds
+1:M 21 Jun 2022 18:04:57.345 * Ready to accept connections
+1:signal-handler (1655866777) Received SIGTERM scheduling shutdown...
+1:M 22 Jun 2022 10:59:37.555 # User requested shutdown...
+1:M 22 Jun 2022 10:59:37.560 * Saving the final RDB snapshot before exiting.
+1:M 22 Jun 2022 10:59:37.592 * DB saved on disk
+1:M 22 Jun 2022 10:59:37.597 * Removing the pid file.
+1:M 22 Jun 2022 10:59:37.599 # Redis is now ready to exit, bye bye...
+1:C 22 Jun 2022 11:14:54.446 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Jun 2022 11:14:54.451 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Jun 2022 11:14:54.498 # Configuration loaded
+1:M 22 Jun 2022 11:14:54.502 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Jun 2022 11:14:54.512 # Server initialized
+1:M 22 Jun 2022 11:14:54.520 * Loading RDB produced by version 6.2.6
+1:M 22 Jun 2022 11:14:54.523 * RDB age 917 seconds
+1:M 22 Jun 2022 11:14:54.527 * RDB memory usage when created 0.77 Mb
+1:M 22 Jun 2022 11:14:54.545 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 22 Jun 2022 11:14:54.550 * DB loaded from disk: 0.032 seconds
+1:M 22 Jun 2022 11:14:54.553 * Ready to accept connections
+1:signal-handler (1655867723) Received SIGTERM scheduling shutdown...
+1:M 22 Jun 2022 11:15:23.351 # User requested shutdown...
+1:M 22 Jun 2022 11:15:23.353 * Saving the final RDB snapshot before exiting.
+1:M 22 Jun 2022 11:15:23.363 * DB saved on disk
+1:M 22 Jun 2022 11:15:23.365 * Removing the pid file.
+1:M 22 Jun 2022 11:15:23.369 # Redis is now ready to exit, bye bye...
+1:C 22 Jun 2022 11:24:09.147 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Jun 2022 11:24:09.159 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Jun 2022 11:24:09.179 # Configuration loaded
+1:M 22 Jun 2022 11:24:09.184 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Jun 2022 11:24:09.198 # Server initialized
+1:M 22 Jun 2022 11:24:09.230 * Loading RDB produced by version 6.2.6
+1:M 22 Jun 2022 11:24:09.234 * RDB age 526 seconds
+1:M 22 Jun 2022 11:24:09.241 * RDB memory usage when created 0.77 Mb
+1:M 22 Jun 2022 11:24:09.245 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 22 Jun 2022 11:24:09.253 * DB loaded from disk: 0.047 seconds
+1:M 22 Jun 2022 11:24:09.255 * Ready to accept connections
+1:signal-handler (1655868405) Received SIGTERM scheduling shutdown...
+1:M 22 Jun 2022 11:26:45.887 # User requested shutdown...
+1:M 22 Jun 2022 11:26:45.892 * Saving the final RDB snapshot before exiting.
+1:M 22 Jun 2022 11:26:45.918 * DB saved on disk
+1:M 22 Jun 2022 11:26:45.923 * Removing the pid file.
+1:M 22 Jun 2022 11:26:45.927 # Redis is now ready to exit, bye bye...
+1:C 22 Jun 2022 11:44:08.639 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Jun 2022 11:44:08.643 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Jun 2022 11:44:08.658 # Configuration loaded
+1:M 22 Jun 2022 11:44:08.678 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Jun 2022 11:44:08.691 # Server initialized
+1:M 22 Jun 2022 11:44:08.699 * Loading RDB produced by version 6.2.6
+1:M 22 Jun 2022 11:44:08.703 * RDB age 1043 seconds
+1:M 22 Jun 2022 11:44:08.727 * RDB memory usage when created 0.77 Mb
+1:M 22 Jun 2022 11:44:08.731 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 22 Jun 2022 11:44:08.738 * DB loaded from disk: 0.041 seconds
+1:M 22 Jun 2022 11:44:08.744 * Ready to accept connections
+1:signal-handler (1655869496) Received SIGTERM scheduling shutdown...
+1:M 22 Jun 2022 11:44:56.447 # User requested shutdown...
+1:M 22 Jun 2022 11:44:56.449 * Saving the final RDB snapshot before exiting.
+1:M 22 Jun 2022 11:44:56.478 * DB saved on disk
+1:M 22 Jun 2022 11:44:56.481 * Removing the pid file.
+1:M 22 Jun 2022 11:44:56.485 # Redis is now ready to exit, bye bye...
+1:C 22 Jun 2022 11:45:20.979 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Jun 2022 11:45:20.981 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Jun 2022 11:45:20.987 # Configuration loaded
+1:M 22 Jun 2022 11:45:20.991 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Jun 2022 11:45:21.018 # Server initialized
+1:M 22 Jun 2022 11:45:21.039 * Loading RDB produced by version 6.2.6
+1:M 22 Jun 2022 11:45:21.042 * RDB age 25 seconds
+1:M 22 Jun 2022 11:45:21.048 * RDB memory usage when created 0.77 Mb
+1:M 22 Jun 2022 11:45:21.068 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 22 Jun 2022 11:45:21.076 * DB loaded from disk: 0.041 seconds
+1:M 22 Jun 2022 11:45:21.084 * Ready to accept connections
+1:signal-handler (1655869603) Received SIGTERM scheduling shutdown...
+1:M 22 Jun 2022 11:46:43.544 # User requested shutdown...
+1:M 22 Jun 2022 11:46:43.546 * Saving the final RDB snapshot before exiting.
+1:M 22 Jun 2022 11:46:43.559 * DB saved on disk
+1:M 22 Jun 2022 11:46:43.561 * Removing the pid file.
+1:M 22 Jun 2022 11:46:43.566 # Redis is now ready to exit, bye bye...
+1:C 22 Jun 2022 11:47:22.751 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Jun 2022 11:47:22.756 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Jun 2022 11:47:22.764 # Configuration loaded
+1:M 22 Jun 2022 11:47:22.782 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Jun 2022 11:47:22.795 # Server initialized
+1:M 22 Jun 2022 11:47:22.804 * Loading RDB produced by version 6.2.6
+1:M 22 Jun 2022 11:47:22.808 * RDB age 39 seconds
+1:M 22 Jun 2022 11:47:22.815 * RDB memory usage when created 0.77 Mb
+1:M 22 Jun 2022 11:47:22.832 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 22 Jun 2022 11:47:22.837 * DB loaded from disk: 0.037 seconds
+1:M 22 Jun 2022 11:47:22.840 * Ready to accept connections
+1:signal-handler (1655880071) Received SIGTERM scheduling shutdown...
+1:M 22 Jun 2022 14:41:11.943 # User requested shutdown...
+1:M 22 Jun 2022 14:41:11.958 * Saving the final RDB snapshot before exiting.
+1:M 22 Jun 2022 14:41:11.972 * DB saved on disk
+1:M 22 Jun 2022 14:41:11.976 * Removing the pid file.
+1:M 22 Jun 2022 14:41:11.979 # Redis is now ready to exit, bye bye...
+1:C 22 Jun 2022 14:41:12.222 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Jun 2022 14:41:12.225 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Jun 2022 14:41:12.230 # Configuration loaded
+1:M 22 Jun 2022 14:41:12.233 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Jun 2022 14:41:12.241 # Server initialized
+1:M 22 Jun 2022 14:41:12.272 * Loading RDB produced by version 6.2.6
+1:M 22 Jun 2022 14:41:12.274 * RDB age 1 seconds
+1:M 22 Jun 2022 14:41:12.278 * RDB memory usage when created 0.77 Mb
+1:M 22 Jun 2022 14:41:12.280 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 22 Jun 2022 14:41:12.283 * DB loaded from disk: 0.038 seconds
+1:M 22 Jun 2022 14:41:12.285 * Ready to accept connections
+1:signal-handler (1655882150) Received SIGTERM scheduling shutdown...
+1:M 22 Jun 2022 15:15:50.165 # User requested shutdown...
+1:M 22 Jun 2022 15:15:50.170 * Saving the final RDB snapshot before exiting.
+1:M 22 Jun 2022 15:15:50.203 * DB saved on disk
+1:M 22 Jun 2022 15:15:50.208 * Removing the pid file.
+1:M 22 Jun 2022 15:15:50.211 # Redis is now ready to exit, bye bye...
+1:C 22 Jun 2022 15:15:50.529 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 22 Jun 2022 15:15:50.534 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 22 Jun 2022 15:15:50.555 # Configuration loaded
+1:M 22 Jun 2022 15:15:50.560 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 22 Jun 2022 15:15:50.573 # Server initialized
+1:M 22 Jun 2022 15:15:50.665 * Loading RDB produced by version 6.2.6
+1:M 22 Jun 2022 15:15:50.668 * RDB age 0 seconds
+1:M 22 Jun 2022 15:15:50.676 * RDB memory usage when created 0.77 Mb
+1:M 22 Jun 2022 15:15:50.680 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 22 Jun 2022 15:15:50.687 * DB loaded from disk: 0.107 seconds
+1:M 22 Jun 2022 15:15:50.704 * Ready to accept connections
+1:signal-handler (1655975524) Received SIGTERM scheduling shutdown...
+1:M 23 Jun 2022 17:12:05.002 # User requested shutdown...
+1:M 23 Jun 2022 17:12:05.010 * Saving the final RDB snapshot before exiting.
+1:M 23 Jun 2022 17:12:05.026 * DB saved on disk
+1:M 23 Jun 2022 17:12:05.031 * Removing the pid file.
+1:M 23 Jun 2022 17:12:05.033 # Redis is now ready to exit, bye bye...
+1:C 23 Jun 2022 17:12:05.318 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 23 Jun 2022 17:12:05.321 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 23 Jun 2022 17:12:05.325 # Configuration loaded
+1:M 23 Jun 2022 17:12:05.328 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 23 Jun 2022 17:12:05.352 # Server initialized
+1:M 23 Jun 2022 17:12:05.372 * Loading RDB produced by version 6.2.6
+1:M 23 Jun 2022 17:12:05.378 * RDB age 0 seconds
+1:M 23 Jun 2022 17:12:05.383 * RDB memory usage when created 0.77 Mb
+1:M 23 Jun 2022 17:12:05.402 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 23 Jun 2022 17:12:05.406 * DB loaded from disk: 0.049 seconds
+1:M 23 Jun 2022 17:12:05.409 * Ready to accept connections
+1:signal-handler (1656326160) Received SIGTERM scheduling shutdown...
+1:M 27 Jun 2022 18:36:00.851 # User requested shutdown...
+1:M 27 Jun 2022 18:36:00.854 * Saving the final RDB snapshot before exiting.
+1:M 27 Jun 2022 18:36:00.884 * DB saved on disk
+1:M 27 Jun 2022 18:36:00.887 * Removing the pid file.
+1:M 27 Jun 2022 18:36:00.892 # Redis is now ready to exit, bye bye...
+1:C 27 Jun 2022 18:37:38.458 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 27 Jun 2022 18:37:38.462 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 27 Jun 2022 18:37:38.468 # Configuration loaded
+1:M 27 Jun 2022 18:37:38.472 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 27 Jun 2022 18:37:38.482 # Server initialized
+1:M 27 Jun 2022 18:37:38.507 * Loading RDB produced by version 6.2.6
+1:M 27 Jun 2022 18:37:38.512 * RDB age 98 seconds
+1:M 27 Jun 2022 18:37:38.516 * RDB memory usage when created 0.77 Mb
+1:M 27 Jun 2022 18:37:38.519 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 27 Jun 2022 18:37:38.523 * DB loaded from disk: 0.036 seconds
+1:M 27 Jun 2022 18:37:38.525 * Ready to accept connections
+1:signal-handler (1656326819) Received SIGTERM scheduling shutdown...
+1:M 27 Jun 2022 18:46:59.074 # User requested shutdown...
+1:M 27 Jun 2022 18:46:59.076 * Saving the final RDB snapshot before exiting.
+1:M 27 Jun 2022 18:46:59.090 * DB saved on disk
+1:M 27 Jun 2022 18:46:59.093 * Removing the pid file.
+1:M 27 Jun 2022 18:46:59.097 # Redis is now ready to exit, bye bye...
+1:C 27 Jun 2022 18:48:44.179 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 27 Jun 2022 18:48:44.184 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 27 Jun 2022 18:48:44.190 # Configuration loaded
+1:M 27 Jun 2022 18:48:44.193 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 27 Jun 2022 18:48:44.219 # Server initialized
+1:M 27 Jun 2022 18:48:44.228 * Loading RDB produced by version 6.2.6
+1:M 27 Jun 2022 18:48:44.232 * RDB age 105 seconds
+1:M 27 Jun 2022 18:48:44.237 * RDB memory usage when created 0.77 Mb
+1:M 27 Jun 2022 18:48:44.242 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 27 Jun 2022 18:48:44.264 * DB loaded from disk: 0.023 seconds
+1:M 27 Jun 2022 18:48:44.268 * Ready to accept connections
+1:signal-handler (1656987880) Received SIGTERM scheduling shutdown...
+1:M 05 Jul 2022 10:24:40.891 # User requested shutdown...
+1:M 05 Jul 2022 10:24:40.896 * Saving the final RDB snapshot before exiting.
+1:M 05 Jul 2022 10:24:40.917 * DB saved on disk
+1:M 05 Jul 2022 10:24:40.921 * Removing the pid file.
+1:M 05 Jul 2022 10:24:40.925 # Redis is now ready to exit, bye bye...
+1:C 05 Jul 2022 10:25:14.170 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 05 Jul 2022 10:25:14.173 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 05 Jul 2022 10:25:14.178 # Configuration loaded
+1:M 05 Jul 2022 10:25:14.182 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 05 Jul 2022 10:25:14.190 # Server initialized
+1:M 05 Jul 2022 10:25:14.201 * Loading RDB produced by version 6.2.6
+1:M 05 Jul 2022 10:25:14.204 * RDB age 34 seconds
+1:M 05 Jul 2022 10:25:14.214 * RDB memory usage when created 0.77 Mb
+1:M 05 Jul 2022 10:25:14.217 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 05 Jul 2022 10:25:14.223 * DB loaded from disk: 0.027 seconds
+1:M 05 Jul 2022 10:25:14.225 * Ready to accept connections
+1:C 25 Jul 2022 10:05:23.307 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 25 Jul 2022 10:05:23.310 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 25 Jul 2022 10:05:23.314 # Configuration loaded
+1:M 25 Jul 2022 10:05:23.317 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 25 Jul 2022 10:05:23.324 # Server initialized
+1:M 25 Jul 2022 10:05:23.358 * Loading RDB produced by version 6.2.6
+1:M 25 Jul 2022 10:05:23.361 * RDB age 1726843 seconds
+1:M 25 Jul 2022 10:05:23.387 * RDB memory usage when created 0.77 Mb
+1:M 25 Jul 2022 10:05:23.391 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 25 Jul 2022 10:05:23.395 * DB loaded from disk: 0.065 seconds
+1:M 25 Jul 2022 10:05:23.398 * Ready to accept connections
+1:C 28 Jul 2022 16:19:32.776 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 28 Jul 2022 16:19:32.779 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 28 Jul 2022 16:19:32.785 # Configuration loaded
+1:M 28 Jul 2022 16:19:32.788 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 28 Jul 2022 16:19:32.794 # Server initialized
+1:M 28 Jul 2022 16:19:32.927 * Loading RDB produced by version 6.2.6
+1:M 28 Jul 2022 16:19:32.930 * RDB age 2008492 seconds
+1:M 28 Jul 2022 16:19:32.936 * RDB memory usage when created 0.77 Mb
+1:M 28 Jul 2022 16:19:32.939 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 28 Jul 2022 16:19:32.943 * DB loaded from disk: 0.145 seconds
+1:M 28 Jul 2022 16:19:32.946 * Ready to accept connections
+1:signal-handler (1659326118) Received SIGTERM scheduling shutdown...
+1:M 01 Aug 2022 11:55:18.296 # User requested shutdown...
+1:M 01 Aug 2022 11:55:18.300 * Saving the final RDB snapshot before exiting.
+1:M 01 Aug 2022 11:55:18.336 * DB saved on disk
+1:M 01 Aug 2022 11:55:18.339 * Removing the pid file.
+1:M 01 Aug 2022 11:55:18.344 # Redis is now ready to exit, bye bye...
+1:C 09 Aug 2022 13:02:18.502 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 09 Aug 2022 13:02:18.505 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 09 Aug 2022 13:02:18.526 # Configuration loaded
+1:M 09 Aug 2022 13:02:18.529 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 09 Aug 2022 13:02:18.537 # Server initialized
+1:M 09 Aug 2022 13:02:18.701 * Loading RDB produced by version 6.2.6
+1:M 09 Aug 2022 13:02:18.706 * RDB age 695220 seconds
+1:M 09 Aug 2022 13:02:18.723 * RDB memory usage when created 0.77 Mb
+1:M 09 Aug 2022 13:02:18.728 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 09 Aug 2022 13:02:18.731 * DB loaded from disk: 0.191 seconds
+1:M 09 Aug 2022 13:02:18.737 * Ready to accept connections
+1:C 10 Aug 2022 19:33:09.581 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 10 Aug 2022 19:33:09.585 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 10 Aug 2022 19:33:09.588 # Configuration loaded
+1:M 10 Aug 2022 19:33:09.591 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 10 Aug 2022 19:33:09.598 # Server initialized
+1:M 10 Aug 2022 19:33:09.630 * Loading RDB produced by version 6.2.6
+1:M 10 Aug 2022 19:33:09.634 * RDB age 805071 seconds
+1:M 10 Aug 2022 19:33:09.638 * RDB memory usage when created 0.77 Mb
+1:M 10 Aug 2022 19:33:09.640 # Done loading RDB, keys loaded: 1, keys expired: 0.
+1:M 10 Aug 2022 19:33:09.644 * DB loaded from disk: 0.041 seconds
+1:M 10 Aug 2022 19:33:09.646 * Ready to accept connections
+1:M 12 Aug 2022 17:28:22.079 * 1 changes in 900 seconds. Saving...
+1:M 12 Aug 2022 17:28:22.093 * Background saving started by pid 20
+20:C 12 Aug 2022 17:28:22.123 * DB saved on disk
+20:C 12 Aug 2022 17:28:22.126 * RDB: 0 MB of memory used by copy-on-write
+1:M 12 Aug 2022 17:28:22.199 * Background saving terminated with success
+1:M 12 Aug 2022 17:43:23.013 * 1 changes in 900 seconds. Saving...
+1:M 12 Aug 2022 17:43:23.020 * Background saving started by pid 21
+21:C 12 Aug 2022 17:43:23.030 * DB saved on disk
+21:C 12 Aug 2022 17:43:23.035 * RDB: 0 MB of memory used by copy-on-write
+1:M 12 Aug 2022 17:43:23.124 * Background saving terminated with success
+1:M 12 Aug 2022 17:58:24.078 * 1 changes in 900 seconds. Saving...
+1:M 12 Aug 2022 17:58:24.081 * Background saving started by pid 22
+22:C 12 Aug 2022 17:58:24.097 * DB saved on disk
+22:C 12 Aug 2022 17:58:24.100 * RDB: 0 MB of memory used by copy-on-write
+1:M 12 Aug 2022 17:58:24.186 * Background saving terminated with success
+1:M 12 Aug 2022 18:13:25.018 * 1 changes in 900 seconds. Saving...
+1:M 12 Aug 2022 18:13:25.024 * Background saving started by pid 23
+23:C 12 Aug 2022 18:13:25.033 * DB saved on disk
+23:C 12 Aug 2022 18:13:25.055 * RDB: 0 MB of memory used by copy-on-write
+1:M 12 Aug 2022 18:13:25.130 * Background saving terminated with success
+1:M 12 Aug 2022 18:28:26.041 * 1 changes in 900 seconds. Saving...
+1:M 12 Aug 2022 18:28:26.044 * Background saving started by pid 24
+24:C 12 Aug 2022 18:28:26.058 * DB saved on disk
+24:C 12 Aug 2022 18:28:26.060 * RDB: 0 MB of memory used by copy-on-write
+1:M 12 Aug 2022 18:28:26.151 * Background saving terminated with success
+1:M 12 Aug 2022 18:43:27.011 * 1 changes in 900 seconds. Saving...
+1:M 12 Aug 2022 18:43:27.017 * Background saving started by pid 25
+25:C 12 Aug 2022 18:43:27.027 * DB saved on disk
+25:C 12 Aug 2022 18:43:27.032 * RDB: 0 MB of memory used by copy-on-write
+1:M 12 Aug 2022 18:43:27.124 * Background saving terminated with success
+1:C 24 Aug 2022 14:47:11.951 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 24 Aug 2022 14:47:11.953 # Redis version=6.2.6, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 24 Aug 2022 14:47:11.957 # Configuration loaded
+1:M 24 Aug 2022 14:47:11.959 * monotonic clock: POSIX clock_gettime
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.2.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                  
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           https://redis.io       
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 24 Aug 2022 14:47:11.965 # Server initialized
+1:M 24 Aug 2022 14:47:12.049 * Loading RDB produced by version 6.2.6
+1:M 24 Aug 2022 14:47:12.053 * RDB age 1022625 seconds
+1:M 24 Aug 2022 14:47:12.058 * RDB memory usage when created 0.98 Mb
+1:M 24 Aug 2022 14:47:12.061 # Done loading RDB, keys loaded: 1, keys expired: 5.
+1:M 24 Aug 2022 14:47:12.065 * DB loaded from disk: 0.095 seconds
+1:M 24 Aug 2022 14:47:12.067 * Ready to accept connections
