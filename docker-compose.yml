@@ -1,7 +1,7 @@
 version: '3.6'
 services:
   python-env:
-    image: "py-3.10.4:v2"
+    image: "py-3.10.4:v3"
     container_name: env-3.10.4
     environment:
       TZ: "Asia/Shanghai"
@@ -12,6 +12,7 @@ services:
       - "3306:3306"
       - "6010:6010"
       - "5010:5010"
+      - "6379:6379"
     # root
     privileged: true
     # 对应 -i
@@ -47,6 +48,19 @@ services:
       - "./mysql/my.cnf:/etc/mysql/my.cnf"
       - "./mysql/logs:/var/log/mysql"
       - "./mysql/mysql-files:/var/lib/mysql-files"
+    network_mode: "service:python-env"
+    restart: always
+
+  redis:
+    image: "redis:latest"
+    container_name: redis
+    environment:
+      TZ: "Asia/Shanghai"
+    volumes:
+      - "./redis/redis.conf:/etc/redis/redis.conf"
+      - "./redis/logs/redis.log:/var/log/redis/redis.log"
+      - "./redis/data:/data"
+    command: [ "redis-server", "/etc/redis/redis.conf" ]
     network_mode: "service:python-env"
     restart: always
 
