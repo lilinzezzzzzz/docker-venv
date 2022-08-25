@@ -1,7 +1,7 @@
 version: '3.6'
 services:
   python-env:
-    image: "py-3.10.4:v3"
+    image: "3.10.4:v3"
     container_name: env-3.10.4
     environment:
       TZ: "Asia/Shanghai"
@@ -22,7 +22,7 @@ services:
     entrypoint: [ "sh" ]
 
   py-3.6.2:
-    image: "py-3.6.2:v2"
+    image: "3.6.2:v2"
     container_name: env-3.6.2
     environment:
       TZ: "Asia/Shanghai"
