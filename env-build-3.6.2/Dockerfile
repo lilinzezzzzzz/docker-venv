@@ -20,4 +20,5 @@ RUN apt-get update &&  \
     apt-get install -y python3-dev && \
     apt-get install -y libffi-dev && \
     apt-get install -y libxslt-dev && \
-    apt-get install -y libsasl2-dev
+    apt-get install -y libsasl2-dev && \
+    apt-get install -y rsync

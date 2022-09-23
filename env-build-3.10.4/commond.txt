@@ -1,4 +1,4 @@
-docker build -t py-3.10.4:v1 .
+docker build -t 3.10.4:v1 .
 
 docker run -itd --name env-3.10.4 -e TZ=Asia/Shanghai --network=docker-env_default -p 10029:22 -p 8088:8088 env-3.10.4:v1 /bin/bash
 

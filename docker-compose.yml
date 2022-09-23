@@ -1,12 +1,12 @@
 version: '3.6'
 services:
   python-env:
-    image: "3.10.4:v3"
+    image: "3.10.4:v1"
     container_name: env-3.10.4
     environment:
       TZ: "Asia/Shanghai"
     ports:
-      - "10010:22"
+      - "10310:22"
       - "10362:10362"
       - "8080:8080"
       - "3306:3306"
@@ -22,7 +22,7 @@ services:
     entrypoint: [ "sh" ]
 
   py-3.6.2:
-    image: "3.6.2:v2"
+    image: "3.6.2:v1"
     container_name: env-3.6.2
     environment:
       TZ: "Asia/Shanghai"
@@ -37,18 +37,23 @@ services:
 
 
   mysql:
-    image: "mysql:latest"
+    image: "mysql:8.0"
     container_name: mysql
     environment:
       TZ: "Asia/Shanghai"
+      MYSQL_ROOT_USER: "root"
       MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_ROOT_HOST: "localhost"
     command: --sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
     volumes:
       - "./mysql/data:/var/lib/mysql"
       - "./mysql/my.cnf:/etc/mysql/my.cnf"
       - "./mysql/logs:/var/log/mysql"
       - "./mysql/mysql-files:/var/lib/mysql-files"
+      - "./mysql/mysql.sock:/var/lib/mysql/mysql.sock"
     network_mode: "service:python-env"
+    # root
+    privileged: true
     restart: always
 
   redis:
@@ -60,7 +65,9 @@ services:
       - "./redis/redis.conf:/etc/redis/redis.conf"
       - "./redis/logs/redis.log:/var/log/redis/redis.log"
       - "./redis/data:/data"
-    command: [ "redis-server", "/etc/redis/redis.conf" ]
+    command: ["redis-server", "/etc/redis/redis.conf"]
     network_mode: "service:python-env"
+    # root
+    privileged: true
     restart: always
 
