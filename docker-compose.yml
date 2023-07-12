@@ -1,7 +1,7 @@
 version: '3.6'
 services:
   python-env:
-    image: "3.6.2:v1"
+    image: "ubuntu-22.04:3.6.2"
     container_name: env-3.6.2
     environment:
       TZ: "Asia/Shanghai"
