@@ -1,14 +1,17 @@
 version: '3.6'
 services:
   python-env:
-    image: "3.6.2:v1"
-    container_name: env-3.6.2
+    image: "3.10.4:yidrone"
+    container_name: env-3.10.4
     environment:
       TZ: "Asia/Shanghai"
     ports:
-      - "10362:22"
+      - "10310:22"
+      - "10362:10362"
       - "8080:8080"
       - "3306:3306"
+      - "6010:6010"
+      - "5010:5010"
       - "6379:6379"
     # root
     privileged: true
@@ -17,6 +20,22 @@ services:
     # 对应 -t
     tty: true
     entrypoint: [ "sh" ]
+
+
+  py-3.6.2:
+    image: "3.6.2:v1"
+    container_name: env-3.6.2
+    environment:
+      TZ: "Asia/Shanghai"
+    network_mode: "service:python-env"
+    # root
+    privileged: true
+    # 对应 -i
+    stdin_open: true
+    # 对应 -t
+    tty: true
+    entrypoint: [ "sh" ]
+
 
   mysql:
     image: "mysql:8.0.30"
