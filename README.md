@@ -1,4 +1,4 @@
-# docker-env  
+# docker-env
 
 ## 注意事项
 
@@ -12,6 +12,7 @@
 - ./test 用于构建单个Python解释器
 
 ## 清华镜像
+
 ```shell
 https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/
 ```
@@ -64,13 +65,13 @@ curl -X GET 127.0.0.1:9200/_analyze?pretty -H 'content-Type:application/json' -d
 
 查看操作系统
 
-``` shell
+```shell
 tail /etc/os-release 
 ```
 
 查看端口进程
 
-``` shell
+```shell
 lsof -i tcp:port
 ```
 
@@ -81,7 +82,7 @@ pip download -d path flask
 pip download -d flasgger
 ```
 
-``` docker
+```docker
 docker run -itd --name env-3.6.1 -p 10022:22 --privileged=true python:3.6.1 /bin/bash
 
 docker run -itd --name env-3.10.0 -p 10023:22 --privileged=true python:3.10.0 /bin/bash
@@ -168,7 +169,7 @@ docker commit -a "作者" -m "提交信息" [container name/id]  镜像名:标�
 ```docker
 host: 共享宿主机网络
 bridge: 同一个bridge网络的容器可以互相通信，各个容器IP不同，可能会有变动
-container: 同一个container网络下的容易共享网络，一个IP，容器之间可以使用 localhost 高效快速通信。
+container: 同一个container网络下的容器共享网络，一个IP，容器之间可以使用 localhost 高效快速通信。
     docker run -itd --name xxs --network container:[container name/id] kky:v1 /bin/bash
 
 network_mode: "bridge"

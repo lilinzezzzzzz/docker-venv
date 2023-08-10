@@ -1,7 +1,7 @@
 version: '3.6'
 services:
   python-env:
-    image: "ubuntu-22.04:3.6.2"
+    image: "ubuntu-3.6.2:v3"
     container_name: env-3.6.2
     environment:
       TZ: "Asia/Shanghai"
@@ -16,7 +16,8 @@ services:
     stdin_open: true
     # 对应 -t
     tty: true
-    entrypoint: [ "sh" ]
+    entrypoint: ["sh"]
+
 
   mysql:
     image: "mysql:8.0.30"
@@ -29,23 +30,6 @@ services:
       - "./mysql/data:/var/lib/mysql"
       - "./mysql/conf:/etc/mysql/conf.d"
       - "./mysql/logs:/var/log/mysql"
-    network_mode: "service:python-env"
-    # root
-    privileged: true
-    depends_on:
-      - python-env
-    restart: always
-
-  redis:
-    image: "redis:6.0.16"
-    container_name: redis
-    environment:
-      TZ: "Asia/Shanghai"
-    volumes:
-      - "./redis/redis.conf:/etc/redis/redis.conf"
-      - "./redis/logs/redis.log:/var/log/redis/redis.log"
-      - "./redis/data:/data"
-    command: ["redis-server", "/etc/redis/redis.conf"]
     network_mode: "service:python-env"
     # root
     privileged: true
