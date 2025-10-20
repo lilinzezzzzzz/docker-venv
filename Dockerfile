@@ -1,26 +1,41 @@
-# 使用 Python 3.12.5 作为基础镜像
-FROM python:3.12.5
+# 使用官方的 python 3.12.9 镜像作为基础镜像
+FROM python:3.12.9
+
+# 设置时区和环境变量
+ENV TZ=UTC
+ENV LANG=C.UTF-8
+RUN ln -sf /usr/share/zoneinfo/UTC /etc/localtime && \
+    echo "UTC" > /etc/timezone
+# 安装常用工具：vim, curl, git, iproute2, net-tools, openssh-server
+RUN apt-get update && \
+    apt-get install -y \
+    vim \
+    curl \
+    git \
+    build-essential \
+    iproute2 \
+    net-tools \
+    openssh-server \
+    iputils-ping \
+    && rm -rf /var/lib/apt/lists/*
+
+# 配置 SSH 服务
+RUN mkdir /var/run/sshd
+
+# 设置 root 密码，确保可以通过 SSH 登录，还需要修改/etc/ssh/sshd_config 文件，将 PermitRootLogin 设置为 yes
+RUN echo 'root:123456' | chpasswd
+
+# 安装 Python 开发环境所需工具，例如 pip 和一些常用的 Python 库
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir \
+    setuptools \
+    wheel \
+    flake8 \
+    black \
+    autopep8
+
+# 暴露 SSH 端口
+EXPOSE 22
 
 # 设置工作目录
 WORKDIR /app
-
-# 设置阿里云的镜像源，如果 /root/.pip/pip.conf 不存在，则创建
-RUN mkdir -p /root/.pip && \
-    [ ! -f /root/.pip/pip.conf ] && \
-    printf "[global]\nindex-url = https://mirrors.aliyun.com/pypi/simple/" > /root/.pip/pip.conf || true
-
-# 升级 pip 到最新版本
-RUN pip install --no-cache-dir --upgrade pip
-
-# 复制 requirements.txt 并安装依赖
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# 复制应用代码到容器
-COPY . .
-
-# 暴露 FastAPI 服务端口
-EXPOSE 28090
-
-# 运行 FastAPI 应用
-ENTRYPOINT ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "28090", "--workers", "4", "--loop", "uvloop", "--http", "httptools", "--access-log"]
