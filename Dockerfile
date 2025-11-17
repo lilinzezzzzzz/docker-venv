@@ -1,41 +1,48 @@
-# 使用官方的 python 3.12.9 镜像作为基础镜像
-FROM python:3.12.9
+FROM python:3.12.9-slim
 
-# 设置时区和环境变量
-ENV TZ=UTC
-ENV LANG=C.UTF-8
-RUN ln -sf /usr/share/zoneinfo/UTC /etc/localtime && \
-    echo "UTC" > /etc/timezone
-# 安装常用工具：vim, curl, git, iproute2, net-tools, openssh-server
-RUN apt-get update && \
-    apt-get install -y \
-    vim \
-    curl \
-    git \
-    build-essential \
-    iproute2 \
-    net-tools \
+ENV TZ=Etc/UTC \
+    LANG=C.UTF-8 \
+    LC_ALL=C.UTF-8 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple
+    PIP_NO_CACHE_DIR=1
+
+# 基础工具 + sshd；--no-install-recommends 降低体积
+RUN apt-get update && apt-get install -y --no-install-recommends \
     openssh-server \
-    iputils-ping \
-    && rm -rf /var/lib/apt/lists/*
+    vim curl git \
+    build-essential \
+    iproute2 net-tools iputils-ping \
+ && rm -rf /var/lib/apt/lists/*
 
-# 配置 SSH 服务
-RUN mkdir /var/run/sshd
+RUN pip install --upgrade pip
 
-# 设置 root 密码，确保可以通过 SSH 登录，还需要修改/etc/ssh/sshd_config 文件，将 PermitRootLogin 设置为 yes
+# 准备 sshd 与 host keys
+RUN mkdir -p /var/run/sshd && ssh-keygen -A
+
+# root 密码（dev only）
 RUN echo 'root:123456' | chpasswd
 
-# 安装 Python 开发环境所需工具，例如 pip 和一些常用的 Python 库
-RUN pip install --upgrade pip && \
-    pip install --no-cache-dir \
-    setuptools \
-    wheel \
-    flake8 \
-    black \
-    autopep8
+# sshd 基本配置：允许 root+密码；关闭反向 DNS；降低爆破窗口
+RUN sed -ri 's/^#?PermitRootLogin .*/PermitRootLogin yes/' /etc/ssh/sshd_config && \
+    sed -ri 's/^#?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && \
+    sed -ri 's/^#?ChallengeResponseAuthentication .*/ChallengeResponseAuthentication no/' /etc/ssh/sshd_config && \
+    sed -ri 's/^#?UsePAM .*/UsePAM yes/' /etc/ssh/sshd_config && \
+    sed -ri 's/^#?UseDNS .*/UseDNS no/' /etc/ssh/sshd_config && \
+    sed -ri 's/^#?MaxAuthTries .*/MaxAuthTries 3/' /etc/ssh/sshd_config && \
+    sed -ri 's/^#?ClientAliveInterval .*/ClientAliveInterval 60/' /etc/ssh/sshd_config && \
+    sed -ri 's/^#?ClientAliveCountMax .*/ClientAliveCountMax 3/' /etc/ssh/sshd_config && \
+    sed -ri 's@^#?AuthorizedKeysFile .*@AuthorizedKeysFile .ssh/authorized_keys@' /etc/ssh/sshd_config && \
+    mkdir -p /root/.ssh && chmod 700 /root/.ssh
 
-# 暴露 SSH 端口
+WORKDIR /app
 EXPOSE 22
 
-# 设置工作目录
-WORKDIR /app
+# 轻量健康检查：确认 22 已监听（iproute2 的 ss 命令）
+HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
+  CMD sh -c "ss -lnt | grep -q ':22 ' || exit 1"
+
+# 前台跑 sshd，日志打到 stderr 便于 docker logs
+CMD ["/usr/sbin/sshd", "-D", "-e"]

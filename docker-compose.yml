@@ -7,7 +7,7 @@ services:
     environment:
       TZ: "UTC"  # 设置时区为 UTC
     ports:
-      - "10222:22"  # 映射主机的 10222 端口到容器的 22 端口，用于 SSH 连接
+      - "10022:22"  # 映射主机的 10222 端口到容器的 22 端口，用于 SSH 连接
       - "8080:8080"  # 映射主机的 8080 端口到容器的 8080 端口（如果需要）
     privileged: true  # 开启特权模式，允许容器执行某些操作（如访问宿主机硬件）
     stdin_open: true  # 保持容器的标准输入打开
@@ -15,42 +15,6 @@ services:
     entrypoint: [ "sh" ]  # 默认启动 shell，可以更改为其他命令
     networks:
       - common-network  # 使用共享网络
-
-  mysql:
-    image: "mysql:8.0.30"
-    container_name: mysql-server
-    ports:
-      - "3306:3306"
-    environment:
-      TZ: "Asia/Shanghai"
-      MYSQL_ROOT_USER: "root"
-      MYSQL_ROOT_PASSWORD: "123456"
-    volumes:
-      - "./mysql/data:/var/lib/mysql"
-      - "./mysql/conf:/etc/mysql/conf.d"
-      - "./mysql/logs:/var/log/mysql"
-    # root
-    privileged: true
-    networks:
-      - common-network
-
-  redis:
-    image: "redis:6.0.16"
-    container_name: redis-server
-    ports:
-      - "6379:6379"
-    environment:
-      TZ: "Asia/Shanghai"
-    volumes:
-      - "./redis/redis.conf:/etc/redis/redis.conf"
-      - "./redis/logs/redis.log:/var/log/redis/redis.log"
-      - "./redis/data:/data"
-    command: [ "redis-server", "/etc/redis/redis.conf" ]
-    # root
-    privileged: true
-    networks:
-      - common-network
-
 
 # 定义共享网络
 networks:
