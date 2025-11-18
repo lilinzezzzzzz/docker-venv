@@ -1,8 +1,9 @@
 services:
   python-venv:
-    build:
-      context: .  # 上下文路径为当前目录
-      dockerfile: Dockerfile  # 指定 Dockerfile 的相对路径
+    image: python-venv-3.12.9:v1.0
+#    build:
+#      context: .  # 上下文路径为当前目录
+#      dockerfile: Dockerfile  # 指定 Dockerfile 的相对路径
     container_name: python-venv
     environment:
       TZ: "UTC"  # 设置时区为 UTC

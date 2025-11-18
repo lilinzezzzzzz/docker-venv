@@ -9,6 +9,13 @@ ENV TZ=Etc/UTC \
     PIP_INDEX_URL=https://mirrors.aliyun.com/pypi/simple \
     PIP_NO_CACHE_DIR=1
 
+WORKDIR /app
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+ENV PATH="/root/.local/bin:$PATH" \
+    UV_PROJECT_ENVIRONMENT=".venv"
+
 # 基础工具 + sshd；--no-install-recommends 降低体积
 RUN apt-get update && apt-get install -y --no-install-recommends \
     openssh-server \
@@ -37,7 +44,6 @@ RUN sed -ri 's/^#?PermitRootLogin .*/PermitRootLogin yes/' /etc/ssh/sshd_config 
     sed -ri 's@^#?AuthorizedKeysFile .*@AuthorizedKeysFile .ssh/authorized_keys@' /etc/ssh/sshd_config && \
     mkdir -p /root/.ssh && chmod 700 /root/.ssh
 
-WORKDIR /app
 EXPOSE 22
 
 # 轻量健康检查：确认 22 已监听（iproute2 的 ss 命令）
