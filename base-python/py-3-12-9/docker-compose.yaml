@@ -1,5 +1,6 @@
 services:
   python-env-3.12:
+    image: python-3.12.9:v1.0
     build:
       context: .  # 上下文路径为当前目录
       dockerfile: Dockerfile  # 指定 Dockerfile 的相对路径
