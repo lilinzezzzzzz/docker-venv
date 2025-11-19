@@ -11,11 +11,6 @@ ENV TZ=Etc/UTC \
 
 WORKDIR /app
 
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
-
-ENV PATH="/root/.local/bin:$PATH" \
-    UV_PROJECT_ENVIRONMENT=".venv"
-
 # 基础工具 + sshd；--no-install-recommends 降低体积
 RUN apt-get update && apt-get install -y --no-install-recommends \
     openssh-server \
